@@ -158,4 +158,4 @@ class ChatApp {
   }
 }
 
-c_a = new ChatApp();
+// c_a = new ChatApp();
