@@ -1,20 +1,9 @@
-var userName = 'chris';
-var displayName = 'ChrisDisplay';
-var conversationId = 'CON-37f8d55c-f7b0-40c2-b907-c8e84e7736a2';
-var clientToken = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NzM3NjY3MTAsImp0aSI6IjNhNmUxODA3LWFjN2QtNDM1NC04YmIxLTE2ZTY4ZWMyOWJkZSIsImV4cCI6MTU3Mzg1MzExMCwic3ViIjoiY2hyaXMiLCJhY2wiOnsicGF0aHMiOnsiLyovdXNlcnMvKioiOnt9LCIvKi9jb252ZXJzYXRpb25zLyoqIjp7fSwiLyovc2Vzc2lvbnMvKioiOnt9LCIvKi9kZXZpY2VzLyoqIjp7fSwiLyovaW1hZ2UvKioiOnt9LCIvKi9tZWRpYS8qKiI6e30sIi8qL2FwcGxpY2F0aW9ucy8qKiI6e30sIi8qL3B1c2gvKioiOnt9LCIvKi9rbm9ja2luZy8qKiI6e319fSwiYXBwbGljYXRpb25faWQiOiIwZGU1MzNmZi1lM2Q2LTRlODMtODYxYi05YTk0NjNiMTQ0M2UifQ.P2baOMvLBWaBYBXDy2EvWH5SIC_c3rRrbAMQEAdapTXO3Uo43dzIxkNZkIWMeW-ouNOgAfNrc5MZMxVyfmT4C1Hf6r6oCn8wpx9mB0d9f4mbf-Qxlf-z7O3qFRNAiQ2yq_e8oUpFZZ_hANPedqJPnQ2HnqQcYnoA1WlzqzrufLDsQCvYIIj9doJTIG4Keg3d_1mA-mk7dibv__uIWJiKA3VzmWStDWq8bpxRPM8RO_CZ6v0XIG6N6xKeAYYnPFTiXgd6I9oQ7663fVpTyfcD8OVeO92kAC5b3BgiQLZjpwkpSngndpIWPtZsuX8a7Hcts3b-c83kXZmYlBHSKmJPmw";
+// var userName = 'chris';
+// var displayName = 'ChrisDisplay';
+// var conversationId = 'CON-37f8d55c-f7b0-40c2-b907-c8e84e7736a2';
+// var clientToken = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NzM3NjY3MTAsImp0aSI6IjNhNmUxODA3LWFjN2QtNDM1NC04YmIxLTE2ZTY4ZWMyOWJkZSIsImV4cCI6MTU3Mzg1MzExMCwic3ViIjoiY2hyaXMiLCJhY2wiOnsicGF0aHMiOnsiLyovdXNlcnMvKioiOnt9LCIvKi9jb252ZXJzYXRpb25zLyoqIjp7fSwiLyovc2Vzc2lvbnMvKioiOnt9LCIvKi9kZXZpY2VzLyoqIjp7fSwiLyovaW1hZ2UvKioiOnt9LCIvKi9tZWRpYS8qKiI6e30sIi8qL2FwcGxpY2F0aW9ucy8qKiI6e30sIi8qL3B1c2gvKioiOnt9LCIvKi9rbm9ja2luZy8qKiI6e319fSwiYXBwbGljYXRpb25faWQiOiIwZGU1MzNmZi1lM2Q2LTRlODMtODYxYi05YTk0NjNiMTQ0M2UifQ.P2baOMvLBWaBYBXDy2EvWH5SIC_c3rRrbAMQEAdapTXO3Uo43dzIxkNZkIWMeW-ouNOgAfNrc5MZMxVyfmT4C1Hf6r6oCn8wpx9mB0d9f4mbf-Qxlf-z7O3qFRNAiQ2yq_e8oUpFZZ_hANPedqJPnQ2HnqQcYnoA1WlzqzrufLDsQCvYIIj9doJTIG4Keg3d_1mA-mk7dibv__uIWJiKA3VzmWStDWq8bpxRPM8RO_CZ6v0XIG6N6xKeAYYnPFTiXgd6I9oQ7663fVpTyfcD8OVeO92kAC5b3BgiQLZjpwkpSngndpIWPtZsuX8a7Hcts3b-c83kXZmYlBHSKmJPmw";
 
 
-function sendMessage(name) {
- document.getElementById("messageFeed").innerHTML +=
-     "<li class=\"media my-3\">" +
-     "<div class=\"media-body\">" +
-     "<h5 class=\"mt-0 mb-1\">" + name + " <small>" +
-     document.getElementById("messageTextarea").value +
-     "</small></h5" +
-     "</div>" +
-     "</li>"
- ;
-}
 
 class ChatApp {
   constructor() {
