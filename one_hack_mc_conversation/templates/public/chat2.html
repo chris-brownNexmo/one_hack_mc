@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="input-group mb-3">
+<input type="text" class="form-control" id="mylogin">
+<div class="input-group-append">
+<button class="btn btn-outline-secondary" type="button" onclick="login_button(document.getElementById('mylogin').value)" id="Start">Login</button>
+</div>
+</div>
+<div class="input-group mb-3">
+<input type="text" class="form-control" id="call">
+<div class="input-group-append">
+<button class="btn btn-outline-secondary" type="button" onclick="call_button(document.getElementById('call').value)" id="Start">Call</button>
+</div>
+</div>
+
+<button class="btn btn-outline-secondary" type="button" onclick="answer_button()" id="Start">Answer</button>
+<button class="btn btn-outline-secondary" type="button" onclick="mute_button()" id="Mute">Mute</button>
+<button class="btn btn-outline-secondary" type="button" onclick="unmute_button()" id="Mute">UnMute</button>
+
+
+          <section id="messages">
+        <ul class="list-unstyled" id="messageFeed">
+        </ul>
+
+        <footer>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="messageTextarea">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" onclick="sendMessage('Chris')" id="send">Send</button>
+            </div>
+          </div>
+        </footer>
+      </section>
+{% endblock %}

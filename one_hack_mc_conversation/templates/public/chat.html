@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+      <section id="messages">
+        <ul class="list-unstyled" id="messageFeed">
+        </ul>
+
+        <footer>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="messageTextarea">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" onclick="sendMessage('Chris')" id="send">Send</button>
+            </div>
+          </div>
+        </footer>
+      </section>
+{% endblock %}
