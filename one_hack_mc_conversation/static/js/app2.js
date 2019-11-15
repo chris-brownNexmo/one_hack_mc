@@ -29,12 +29,9 @@ var client = new NexmoClient(config);
 
 function login_button(name) {
   var jwt = loginsJWTMap[name];
-  client.login(jwt);
-
-  userName = name;
-  clientToken = jwt;
-  chat_client = new ChatApp()
+  client.login(jwt).then( () => {new ChatApp();});
 }
+
 
 function call_button(name) {
   client.application.inAppCall(name.split(","));

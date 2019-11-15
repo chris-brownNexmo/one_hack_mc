@@ -37,12 +37,7 @@ class ChatApp {
 
     console.log(client_token);
 
-    new NexmoClient({ debug: true })
-      .login(client_token)
-      .then(app => {
-        console.log('*** Logged into app', app);
-        return app.getConversation(conversation_id);
-      })
+    client.application.getConversation(conversation_id)
       .then((conversation) => {
         console.log('*** Joined conversation', conversation);
         this.setupConversationEvents(conversation, user);
